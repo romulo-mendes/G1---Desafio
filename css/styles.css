@@ -1,42 +1,128 @@
-body{
-    font-family: Segoe UI, 'Segoe UI';
+body {
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.top-header{
-    background-color: #c4170c;
+.top-header {
+	background-color: #c4170c;
+	border: 1px solid #707070;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 123px;
+}
+.top-menu {
+	font-size: 25px;
+	text-align: left;
+}
+.top-menu a {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: #fff;
+}
+.top-menu span {
+	margin: 9px;
+}
+
+.top-search {
+	box-sizing: border-box;
+}
+
+.top-search label {
+	position: relative;
+	margin-top: 5px;
+}
+.top-search input::placeholder {
+	color: #fff;
+	opacity: 1;
+	font-family: "Segoe UI";
+	padding-left: 57px;
+}
+.top-search input:focus {
+	outline: 0;
+	background-color: #fff;
+	transform-origin: right top; 
+	width: 380px;
+}
+
+.top-search input {
+	background: url(/img/search.svg) no-repeat;
+	background-position: 15px;
+	background-color: #8b0000;
+	border-radius: 8px;
+	font-size: 25px;
+	text-align: left;
+	height: 46px;
+	width: 326px;
+	border: 1px solid #707070;
+	/* padding-left: 57px; */
+	transition: 0.5s;
+}
+
+.top-search input:focus::placeholder {
+	color: #707070;
+	/* background-color: #fff;
+    -webkit-mask-image: url(icon.svg);
+    mask-image: url(icon.svg);
+    background: #707070 no-repeat; */
+}
+
+.top-main h1{
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+    margin: 45px auto 45px;
+}
+
+.grid-main{
+    display:grid;
+    margin: 100px ;
+    grid-template-rows: 320px 150px 320px 98px;
+    grid-template-columns: 794px 834px;
+    
+    column-gap: 95px;
+    row-gap: 0;
+}
+
+.grid-1{
     border: 1px solid #707070;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 123px;
-}
-.top-menu{
-    font-size: 25px;
+    border-radius: 4px;
+    grid-row-start: 1;
+    grid-row-end: 5;
     text-align: left;
+    color: #880000;
 }
-.top-menu a{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #fff;
+.grid-1 h2{
+    font-size: 40px;
+    margin: 0 30px;
 }
-.top-menu span{
-    margin: 9px;
+.grid-1 p{
+    font-size: 25px;
+    margin: 5px 45px;
 }
 
-.top-search{
-    background-color: #8b0000;
-    border-radius: 8px;
-    font-size: 25px;
-    text-align: left;
-    height: 46px;
-    width: 326px;
-    color: #fff;
+.grid-2{
+    background: no-repeat url(/img/homem-janela-caminhao.png);
+    background-position: top;
+    background-size: auto;
+    margin-bottom: 0;
 }
-.top-search form{
-    display: flex;
-    align-items: center;
-    height: 100%;
-    padding-left:14px;
-    gap: 12px;
+.grid-2text{
+    font-size: 25px;
+    margin: 0;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.grid-3{
+    background: no-repeat url(/img/2020-08-31t015709z-635394129-rc2poi9d1fr1-rtrmadp-3-awards-vma.png);
+    background-position: bottom;
+    background-size: auto;;
+}
+.grid-3text{
+    font-size: 25px;
+    margin-top: 0;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    padding-top: 40px;
 }
