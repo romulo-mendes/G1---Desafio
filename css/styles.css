@@ -118,3 +118,30 @@ body {
 .grid-3 p{
     margin: 0;
 }
+.bottom-main {
+    padding: 100px;
+}
+.card-1{
+    display: flex;
+    padding: 68px 0 91px 0;
+    border-bottom: 2px solid #707070;
+}
+.category-1{
+    font-size: 25px;
+    font-weight: 600;
+}
+.card-1 img{
+    padding-right: 52px;
+}
+.card-1 h2{
+    font-size: 35px;
+    color: #C4170C;
+}
+.card-1 p{
+    font-size: 27px;
+}
+
+.time-card1{
+    font-size: 27px;
+    color: #746565;
+}
