@@ -7,8 +7,9 @@ body {
 	border: 1px solid #707070;
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
 	height: 123px;
+    padding: 0 100px;
 }
 .top-menu {
 	font-size: 25px;
@@ -79,7 +80,6 @@ body {
     margin: 100px ;
     grid-template-rows: 418px 418px;
     grid-template-columns: 794px 834px;
-    
     column-gap: 95px;
     row-gap: 0;
 }
@@ -91,6 +91,9 @@ body {
     grid-row-end: 5;
     text-align: left;
     color: #880000;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 .grid-1 h2{
     font-size: 40px;
@@ -133,9 +136,13 @@ body {
 .card-1 img{
     padding-right: 52px;
 }
-.card-1 h2{
+.card-1 a{
     font-size: 35px;
     color: #C4170C;
+    text-decoration: none;
+}
+.card-1 a:hover{
+    color: #a6130a;
 }
 .card-1 p{
     font-size: 27px;
@@ -144,4 +151,20 @@ body {
 .time-card1{
     font-size: 27px;
     color: #746565;
+}
+.btn-default{
+    background-color: #C4170C;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    margin: 180px 765px;
+    width: 390px;
+    height: 90px;
+    font-size: 25px;
+    color: #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn-default:hover{
+    background-color: #a6130a;
 }
