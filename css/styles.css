@@ -7,8 +7,10 @@ body {
 	border: 1px solid #707070;
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
 	height: 123px;
+    padding: 0 100px;
+    width: auto;
 }
 .top-menu {
 	font-size: 25px;
@@ -36,7 +38,6 @@ body {
 	color: #fff;
 	opacity: 1;
 	font-family: "Segoe UI";
-	padding-left: 57px;
 }
 .top-search input:focus {
 	outline: 0;
@@ -76,11 +77,11 @@ body {
 
 .grid-main{
     display:grid;
-    margin: 100px ;
-    grid-template-rows: 320px 150px 320px 98px;
-    grid-template-columns: 794px 834px;
-    
-    column-gap: 95px;
+    width: auto;
+    margin: 5% ;
+    grid-template-rows: 418px 418px;
+    grid-template-columns: 41.5% 41.5%;
+    column-gap: 5%;
     row-gap: 0;
 }
 
@@ -91,6 +92,9 @@ body {
     grid-row-end: 5;
     text-align: left;
     color: #880000;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 .grid-1 h2{
     font-size: 40px;
@@ -102,27 +106,113 @@ body {
 }
 
 .grid-2{
-    background: no-repeat url(/img/homem-janela-caminhao.png);
-    background-position: top;
-    background-size: auto;
-    margin-bottom: 0;
-}
-.grid-2text{
     font-size: 25px;
-    margin: 0;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    margin-bottom: 0;
+    width: 100%;
+}
+.grid-2 p{
+    margin-top: 0;
+}
+.grid-2 img{
+    width: auto;
 }
 .grid-3{
-    background: no-repeat url(/img/2020-08-31t015709z-635394129-rc2poi9d1fr1-rtrmadp-3-awards-vma.png);
-    background-position: bottom;
-    background-size: auto;;
-}
-.grid-3text{
     font-size: 25px;
-    margin-top: 0;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    grid-column-start: 2;
-    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: 0;
+    width: 100%;
+}
+.grid-3 img{
+    width: 100%;
+}
+.grid-3 p{
+    margin: 0;
+}
+.bottom-main {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.card-1{
+    display: flex;
+    padding: 68px 0 91px 0;
+    border-bottom: 2px solid #707070;
+}
+.category-1{
+    font-size: 25px;
+    font-weight: 600;
+}
+.card-1 img{
+    padding-right: 52px;
+    width: 41.5%;
+}
+.card-1 a{
+    font-size: 35px;
+    color: #C4170C;
+    text-decoration: none;
+}
+.card-1 a:hover{
+    color: #a6130a;
+}
+.card-1 p{
+    font-size: 27px;
+}
+
+.time-card1{
+    font-size: 27px;
+    color: #746565;
+}
+.btn-default{
+    background-color: #C4170C;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    margin: 180px 0;
+    align-self: center;
+    width: 390px;
+    height: 90px;
+    font-size: 25px;
+    color: #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn-default:hover{
+    background-color: #a6130a;
+}
+
+footer{
+    background-color: #C4170C;
+    color: #fff;
+    border: 1px solid #707070;
+    padding: 40px 40px 5px 100px;
+    position: absolute;
+    width: 100%;
+    max-width: 1920px;
+    box-sizing: border-box;
+}
+.footer-list{
+    list-style: none;
+    display: flex;
+    float: right;
+    position: relative;
+}
+.footer-list p{
+    float: left;
+    position: relative;
+    left: 0;
+    bottom: 0;
+}
+.footer-list li:nth-child(2){
+    border-right: 1px solid #707070;
+    border-left: 1px solid #707070;
+}
+.footer-list li:nth-child(3){
+    border-right: 1px solid #707070;
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 5px 0 5px;
 }
