@@ -1,122 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Últimas notícias do Brasil e do mundo, sobre política, economia, emprego, educação, saúde, meio ambiente, tecnologia, ciência, cultura e carros. Vídeos dos telejornais da TV Globo e da GloboNews."
-    />
-    <title>G1 - O portal de notícias da Globo</title>
-    <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="icon" href="/img/g1-favicon.png" />
-  </head>
-  <body>
-    <header class="top-header">
-      <div class="top-menu">
-        <a href="#"><img src="/img/hamburguer.png" alt="Menu" /><span>MENU</span></a>
-      </div>
-      <div class="logo">
-        <a href="#"><img src="/img/logo.svg" alt="Logo G1" /></a>
-      </div>
-      <div class="top-search">
-        <form action="#" method="get">
-          <label>
-            <input type="text" placeholder="BUSCAR" />
-          </label>
-        </form>
-      </div>
-    </header>
-    <main class="main-content">
-      <article class="top-main">
-        <h1>AS MELHORES NOTÍCIAS DE HOJE</h1>
-        <div class="grid-main">
-          <div class="grid-1">
-            <h2>
-              Lucro do FGTS será<br />depositado nas contas hoje;<br />
-              veja como fica o rendimento
-            </h2>
-            <p>- caixa libera novos saques emergências do FGTS; veja calendário</p>
-          </div>
-          <div class="grid-2">
-            <img
-              src="/img/homem-janela-caminhao.png"
-              alt="ladrão pendurado na janela de caminhão"
-            />
-            <p>VÍDEO: ladrão invade caminhão pela janela para roubar carga BR-040</p>
-          </div>
-          <div class="grid-3">
-            <img
-              src="/img/2020-08-31t015709z-635394129-rc2poi9d1fr1-rtrmadp-3-awards-vma.png"
-              alt="lady gaga com mascara diferente"
-            />
-            <p>FOTOS: 'festival' de máscaras de Lady Gaga rouba a cena no VMA</p>
-          </div>
-        </div>
-      </article>
-      <article class="bottom-main">
-        <div class="card-1">
-          <img src="/img/notas.png" alt="notas espalhadas" />
-          <div class="text-card1">
-            <span class="category-1">Economia</span><br />
-            <a href="#"
-              >Nota de R$ 200 será lançada na quarta,<br />
-              diz Banco Central</a
-            >
-            <p>
-              Cédula terá imagem de um lobo-guará. Serão produzidas 450 milhões de unidades neste
-              ano.
-            </p>
-            <span class="time-card1">Há 5 minutos - Em Economia</span>
-          </div>
-        </div>
-        <div class="card-1">
-          <img src="/img/notas.png" alt="notas espalhadas" />
-          <div class="text-card1">
-            <span class="category-1">Economia</span><br />
-            <a href="#"
-              >Nota de R$ 200 será lançada na quarta,<br />
-              diz Banco Central</a
-            >
-            <p>
-              Cédula terá imagem de um lobo-guará. Serão produzidas 450 milhões de unidades neste
-              ano.
-            </p>
-            <span class="time-card1">Há 5 minutos - Em Economia</span>
-          </div>
-        </div>
-        <div class="card-1">
-          <img src="/img/notas.png" alt="notas espalhadas" />
-          <div class="text-card1">
-            <span class="category-1">Economia</span><br />
-            <a href="#"
-              >Nota de R$ 200 será lançada na quarta,<br />
-              diz Banco Central</a
-            >
-            <p>
-              Cédula terá imagem de um lobo-guará. Serão produzidas 450 milhões de unidades neste
-              ano.
-            </p>
-            <span class="time-card1">Há 5 minutos - Em Economia</span>
-          </div>
-        </div>
-        <button class="btn-default">VEJA MAIS</button>
-      </article>
-    </main>
-    <footer>
-      <img src="/img/logo.svg" alt="logo g1" />
-      <a href="#">últimas notícias</a>
-      <p>
-        © Copyright 2000-2020 Globo Comunicação e Participações S.A.
-      </p>
-	  <ul class="footer-list">
-		  <li><a href="#">princípios editoriais </a></li>
-		  <li><a href="#"> política de privacidade </a></li>
-		  <li><a href="#"> minha conta </a></li>
-		  <li><a href="#"> anuncie </a></li>
-	  </ul>
-    </footer>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Últimas notícias do Brasil e do mundo, sobre política, economia, emprego, educação, saúde, meio ambiente, tecnologia, ciência, cultura e carros. Vídeos dos telejornais da TV Globo e da GloboNews."
+		/>
+		<title>G1 - O portal de notícias da Globo</title>
+		<!-- <link rel="stylesheet" href="/css/normalize.css" /> -->
+		<link rel="stylesheet" href="/css/styles.css" />
+		<link rel="icon" href="/img/g1-favicon.png" />
+		<script>
+			function changeColorImg() {
+				document.getElementById("img-search").style.backgroundColor = "#707070";
+			}
+      function changeColorImg2() {
+				document.getElementById("img-search").style.backgroundColor = "white";
+			}
+		</script>
+
+	</head>
+	<body>
+		<header class="top-header">
+			<div class="top-menu">
+				<a href="#"><img src="/img/hamburguer.png" alt="Menu" /><span>MENU</span></a>
+			</div>
+			<div class="logo">
+				<a href="#"><img src="/img/logo.svg" alt="Logo G1" /></a>
+			</div>
+			<div class="top-search">
+				<form action="#" method="get">
+					<div class="search-img" id="img-search">
+						<!-- <img src="/img/search.svg" alt="lupa"> -->
+					</div>
+					<input type="text" id="input-search" onfocus="changeColorImg()" onblur="changeColorImg2()" placeholder="BUSCAR" />
+				</form>
+			</div>
+		</header>
+		<main class="main-content">
+			<article class="top-main">
+				<h1>AS MELHORES NOTÍCIAS DE HOJE</h1>
+				<div class="grid-main">
+					<div class="grid-1">
+						<div class="grid-1text">
+							<h2>
+								Lucro do FGTS será<br />depositado nas contas hoje;<br />
+								veja como fica o rendimento
+							</h2>
+							<p>- caixa libera novos saques emergências do FGTS; veja calendário</p>
+						</div>
+					</div>
+					<div class="grid-2">
+						<div>
+							<img
+								src="/img/homem-janela-caminhao.png"
+								alt="ladrão pendurado na janela de caminhão"
+							/>
+							<p>VÍDEO: ladrão invade caminhão pela janela para roubar carga BR-040</p>
+						</div>
+						<div>
+							<img
+								src="/img/2020-08-31t015709z-635394129-rc2poi9d1fr1-rtrmadp-3-awards-vma.png"
+								alt="lady gaga com mascara diferente"
+							/>
+							<p>FOTOS: 'festival' de máscaras de Lady Gaga rouba a cena no VMA</p>
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<article class="bottom-main">
+				<div class="card-1">
+					<div class="card-container">
+						<img src="/img/notas.png" alt="notas espalhadas" />
+					</div>
+					<div class="card-container">
+						<div class="card-1text">
+							<div class="card-1toptext">
+								<span class="category-1">Economia</span><br />
+								<a href="#"
+									>Nota de R$ 200 será lançada na quarta,<br />
+									diz Banco Central</a
+								>
+							</div>
+							<p>
+								Cédula terá imagem de um lobo-guará. Serão produzidas 450 milhões de
+								unidades neste ano.
+							</p>
+							<span class="time-card1">Há 5 minutos - Em Economia</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="horizontal-line"></div>
+
+				<div class="card-1">
+					<div class="card-container">
+						<img src="/img/notas.png" alt="notas espalhadas" />
+					</div>
+					<div class="card-container">
+						<div class="card-1text">
+							<div class="card-1toptext">
+								<span class="category-1">Economia</span><br />
+								<a href="#"
+									>Nota de R$ 200 será lançada na quarta,<br />
+									diz Banco Central</a
+								>
+							</div>
+							<p>
+								Cédula terá imagem de um lobo-guará. Serão produzidas 450 milhões de
+								unidades neste ano.
+							</p>
+							<span class="time-card1">Há 5 minutos - Em Economia</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="horizontal-line"></div>
+
+				<div class="card-1">
+					<div class="card-container">
+						<img src="/img/notas.png" alt="notas espalhadas" />
+					</div>
+					<div class="card-container">
+						<div class="card-1text">
+							<div class="card-1toptext">
+								<span class="category-1">Economia</span><br />
+								<a href="#"
+									>Nota de R$ 200 será lançada na quarta,<br />
+									diz Banco Central</a
+								>
+							</div>
+							<p>
+								Cédula terá imagem de um lobo-guará. Serão produzidas 450 milhões de
+								unidades neste ano.
+							</p>
+							<span class="time-card1">Há 5 minutos - Em Economia</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="horizontal-line"></div>
+
+				<button class="btn-default">VEJA MAIS</button>
+			</article>
+		</main>
+		<footer>
+			<div class="footer-logo">
+				<img src="/img/logo.svg" alt="logo g1" />
+				<a href="#">últimas notícias</a>
+			</div>
+			<div class="footer-bottom">
+				<p>© Copyright 2000-2020 Globo Comunicação e Participações S.A.</p>
+				<ul class="footer-list">
+					<li><a href="#">princípios editoriais </a></li>
+					<li><a href="#"> política de privacidade </a></li>
+					<li><a href="#"> minha conta </a></li>
+					<li><a href="#"> anuncie </a></li>
+				</ul>
+			</div>
+		</footer>
+	</body>
 </html>
