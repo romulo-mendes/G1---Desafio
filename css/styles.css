@@ -303,6 +303,17 @@ footer a {
 	.grid-1text br{
 		display: inline;
 	}
+	.card-1{
+		flex-direction: column;
+		gap: 30px;
+	}
+	.card-container{
+		width: 100%;
+	}
+	.card-1text {
+		margin-left: 0;
+		gap: 10px;
+	}
 }
 
 @media screen and (max-width: 425px){
