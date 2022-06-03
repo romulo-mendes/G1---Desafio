@@ -291,6 +291,9 @@ footer a {
 	.search-img{
 		pointer-events: none;
 	}
+	.footer-logo img{
+		width: 50px;
+	}
 
 }
 
