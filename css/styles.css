@@ -13,6 +13,10 @@ h6,
 strong {
 	margin: 0;
 }
+a {
+	text-decoration: none;
+	color: currentColor;
+}
 
 .top-header {
 	background-color: #c4170c;
@@ -57,7 +61,6 @@ form {
 }
 form input {
 	padding-left: 57px;
-	transition-duration: 500ms;
 }
 
 .search-img {
@@ -73,9 +76,10 @@ form input {
 .top-search input:focus {
 	outline: 0;
 	background-color: #fff;
-	transform-origin: right top;
 	width: 380px;
 }
+
+
 
 .top-search input {
 	background-color: #8b0000;
@@ -99,11 +103,6 @@ form input {
 	font-weight: bold;
 	margin: 45px auto;
 }
-
-.logo {
-	justify-self: center;
-}
-
 .grid-main {
 	display: grid;
 	width: auto;
@@ -235,6 +234,7 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	font-size: 20px;
+	margin-bottom: 5px;
 }
 .footer-list {
 	list-style: none;
@@ -262,4 +262,58 @@ footer a {
 	.footer-list {
 		display: none;
 	}
+}
+
+@media screen and (max-width: 1060px) {
+	.top-menu span{
+		display: none;
+	}
+	.top-header {
+		padding: 0 50px;
+	}
+	.top-search input{
+		background-color: transparent;
+		border: 0;
+		width: 100px;
+		width: 100px;
+		padding: 0
+	}
+	.top-search input::placeholder{
+		color: transparent;
+	}
+	.top-search input:focus {
+		width: 100px;
+		padding-left: 50px;
+	}
+	.logo img{
+		width: 75px;
+	}
+	.search-img{
+		pointer-events: none;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+	.grid-main{
+		display: flex;
+		flex-direction: column;
+		gap: 90px;
+	}
+	.grid-1text br{
+		display: inline;
+	}
+}
+
+@media screen and (max-width: 425px){
+	.top-header {
+		padding: 0 25px;
+	}
+	.logo img{
+		width: 50px;
+	}
+	.btn-default{
+		width: 200px;
+	}
+
 }
